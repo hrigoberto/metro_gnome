@@ -1,14 +1,15 @@
 html {
   background-color: #894046;
+  padding-top: 140px;
 }
 
 .container {
   background-color: #894046;
 }
 
-.row {
-  width: 300px;
-  height: 300px;
+.well {
+  width: 80px;
+  height: 80px;
   background-color: #ffedf2;
   border-radius: 100%;
 }
