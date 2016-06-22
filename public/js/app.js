@@ -18,7 +18,7 @@ $(document).ready(function() {
 
   function stopMetronome(){
     clearInterval(toggle);
-    $bleep.fadeIn(x);
+    $bleep.show(x);
   };
 
 
