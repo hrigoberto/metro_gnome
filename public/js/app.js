@@ -4,6 +4,7 @@ $(document).ready(function() {
   var $bleep = $('#bleep');
   var $stop = $('#stop');
   var toggle;
+  var $click = document.getElementById('click');
 
   $start.on('click', startMetronome);
   $stop.on('click', stopMetronome);
@@ -11,6 +12,7 @@ $(document).ready(function() {
   function startMetronome() {
     toggle =  setInterval(function(){
       $bleep.fadeToggle(x);
+      $click.play();
     }, x);
   }
 

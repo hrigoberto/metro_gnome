@@ -1,10 +1,10 @@
 html {
-  background-color: #894046;
+  background-color: #af6966;
   padding-top: 140px;
 }
 
 .container {
-  background-color: #894046;
+  background-color: #af6966;
 }
 
 #startrow {
@@ -20,4 +20,11 @@ html {
 
 #stop {
   margin-top: 30px;
+}
+
+#header {
+  text-align: center;
+  margin-right: 70px;
+  margin-bottom: 50px;
+  color: #ffedf2;
 }
