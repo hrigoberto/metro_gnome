@@ -3,14 +3,21 @@ $(document).ready(function() {
   var x = 500;
   var $bleep = $('#bleep');
   var $stop = $('#stop');
+  var toggle;
 
-  $start.on('click', startCountdown);
+  $start.on('click', startMetronome);
+  $stop.on('click', stopMetronome);
 
-  function startCountdown() {
-    setInterval(function(){
+  function startMetronome() {
+    toggle =  setInterval(function(){
       $bleep.fadeToggle(x);
     }, x);
   }
+
+  function stopMetronome(){
+    clearInterval(toggle);
+    $bleep.fadeIn(x);
+  };
 
 
 
