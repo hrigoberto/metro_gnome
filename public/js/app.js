@@ -1,10 +1,11 @@
 $(document).ready(function() {
   var $start = $('#start');
-  var x = 500;
+  var x = (60000/$input)/2;
   var $bleep = $('#bleep');
   var $stop = $('#stop');
   var toggle;
   var $click = document.getElementById('click');
+  var $input = +$('BPMinput').val();
 
   $start.on('click', startMetronome);
   $stop.on('click', stopMetronome);
