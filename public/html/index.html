@@ -19,12 +19,20 @@
     </div>
     <br>
     <div class="row col-md-12" id="startrow">
-      <button type="button" class="btn btn-success col-md-1 col-md-offset-5" id="start">Start</button>
+      <div>
+        <label for="BPM" class="col-md-1 col-md-offset-5">BPM?</label>
+        <br>
+        <br>
+        <input type="range" name="BPM" min="40" max="200" class="col-md-1" id="BPMinput">
+        <br>
+        <br>
+      </div>
+      <button type="submit" class="btn btn-success col-md-1 col-md-offset-5" id="start">Start</button>
     </div>
     <div class="row col-md-12" id="stoprow">
       <button type="button" class="btn btn-danger col-md-1 col-md-offset-5" id="stop">Stop</button>
     </div>
-    <audio src="http://www.soundjay.com/switch/sounds/switch-8.mp3" type="audio/mpeg" id='click'></audio>
+    <audio src="click.mp3" type="audio/mpeg" id='click'></audio>
   </div>
 
   <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
